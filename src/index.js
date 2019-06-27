@@ -1,6 +1,6 @@
 import {createStore} from 'redux';
 
-const reducer = (state = 0, action) => {
+const reducer = (state = document.getElementById('counter').textContent, action) => {
     switch (action.type) {
         case 'INC' :
             return state + 1;
